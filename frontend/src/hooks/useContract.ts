@@ -5,9 +5,9 @@ import TipPostArtifact from "../abi/TipPost.json";
 const TipPostAbi = TipPostArtifact.abi;
 const CONTRACT_ADDRESS = import.meta.env.VITE_CONTRACT_ADDRESS as string;
 
-// Stable read-only provider using Ankr public RPC — created once, never recreated.
+// Stable read-only provider using BlockPI public RPC — created once, never recreated.
 // This keeps event listeners in usePosts alive regardless of wallet state.
-const readProvider = new ethers.JsonRpcProvider("https://rpc.ankr.com/eth_sepolia");
+const readProvider = new ethers.JsonRpcProvider("https://sepolia.blockpi.network/v1/rpc/public");
 const staticReadContract = CONTRACT_ADDRESS
   ? new ethers.Contract(CONTRACT_ADDRESS, TipPostAbi, readProvider)
   : null;
