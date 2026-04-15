@@ -1,4 +1,5 @@
-import { useState, FormEvent } from "react";
+import { useState } from "react";
+import type { FormEvent } from "react";
 import { useContract } from "../hooks/useContract";
 import { usePosts } from "../hooks/usePosts";
 import type { TxStatus } from "../types";
