@@ -12,7 +12,7 @@ export const onboard = Onboard({
       id: `0x${parseInt(SEPOLIA_CHAIN_ID).toString(16)}`,
       token: "ETH",
       label: "Sepolia",
-      rpcUrl: "https://rpc.sepolia.org",
+      rpcUrl: "https://ethereum-sepolia-rpc.publicnode.com",
     },
   ],
   appMetadata: {
